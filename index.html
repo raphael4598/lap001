@@ -1,48 +1,63 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="th">
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <title>Esigned</title>
-  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
-  <link href="css/style.css" rel="stylesheet" />
-  <link href="css/responsive.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Text with Corner Numbers</title>
   <style>
-    .se66-label {
-      position: fixed;
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body, html {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      position: relative;
+      text-align: center;
+    }
+    .center-text {
+      font-size: 48px;
+      font-weight: bold;
+      color: #2c3e50;
+    }
+    .corner-text {
+      position: absolute;
+      font-size: 24px;
+      color: #3498db;
+      font-weight: bold;
+    }
+    .top-left {
       top: 10px;
       left: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #ff6600;
     }
-    .id-label {
-      position: fixed;
+    .top-right {
+      top: 10px;
+      right: 10px;
+    }
+    .bottom-left {
+      bottom: 10px;
+      left: 10px;
+    }
+    .bottom-right {
       bottom: 10px;
       right: 10px;
-      font-size: 18px;
-      font-weight: bold;
-      color: #0066ff;
     }
   </style>
 </head>
-
 <body>
-  <div class="se66-label">se66</div>
-  <div class="id-label">66026011</div>
-  <div class="hero_area">
-    <header class="header_section">
-      <div class="container-fluid">
-        <nav class="navbar navbar-expand-lg custom_nav-container pt-3">
-          <a class="navbar-brand" href="index.html">
-            <span>Esigned</span>
-          </a>
-        </nav>
-      </div>
-    </header>
+  <div class="container">
+    <div class="center-text">se66</div>
+    <div class="corner-text top-left">66026011</div>
+    <div class="corner-text top-right">66026011</div>
+    <div class="corner-text bottom-left">66026011</div>
+    <div class="corner-text bottom-right">66026011</div>
   </div>
 </body>
-
 </html>
