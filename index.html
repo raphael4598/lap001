@@ -20,12 +20,18 @@
     }
     .container {
       position: relative;
+      width: 100%;
+      height: 100%;
       text-align: center;
     }
     .center-text {
       font-size: 48px;
       font-weight: bold;
       color: #2c3e50;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
     .corner-text {
       position: absolute;
@@ -53,11 +59,11 @@
 </head>
 <body>
   <div class="container">
-    <div class="center-text">se66</div>
     <div class="corner-text top-left">66026011</div>
     <div class="corner-text top-right">66026011</div>
     <div class="corner-text bottom-left">66026011</div>
     <div class="corner-text bottom-right">66026011</div>
+    <div class="center-text">se66</div>
   </div>
 </body>
 </html>
